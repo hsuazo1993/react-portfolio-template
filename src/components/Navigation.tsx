@@ -87,11 +87,11 @@ function Navigation({parentToChild, modeChange}: any) {
           >
             <MenuIcon />
           </IconButton>
-          {mode === 'dark' ? (
+          {/* {mode === 'dark' ? (
             <LightModeIcon onClick={() => modeChange()}/>
           ) : (
             <DarkModeIcon onClick={() => modeChange()}/>
-          )}
+          )} */}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>

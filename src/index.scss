@@ -15,8 +15,32 @@ code {
 
 .main-container {
   position: relative;
-  background-color: #0d1116;
+  // background-color: #0d1116;
+  background: radial-gradient(ellipse farthest-corner at bottom left, #916abf, #8f30a0, #320c3d, #1d284c);
+  background-size: 300% 300%;
+  animation: liquidBackground 10s linear infinite;
+}
 
+@keyframes liquidBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  25% {
+    background-position: 100% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  75% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 a {
@@ -26,6 +50,7 @@ a {
 a:hover {
   color: #5000ca;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transform: scale3d(1.5, 1.5, 1.5);
 }
 
 p, a, h1, h2, h3, h4, h5, label, button {
@@ -106,6 +131,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
   a:hover {
     color: #5000ca;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transform: scale3d(1.5, 1.5, 1.5);
   }
 
   .navigation-bar svg {
